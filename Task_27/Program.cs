@@ -18,12 +18,12 @@ int SumDigitsNumber(int num)
 }
 
 //Получение данных
-Console.Write("Введите положительное число: ");
+Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 0)
 {
     number = Math.Abs(number);
-}пше 
+}
 
 //Вывод результата
 Console.WriteLine($"Сумма цифр: {SumDigitsNumber(number)}");
