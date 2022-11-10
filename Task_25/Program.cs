@@ -3,7 +3,7 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
-//Функция расчета степени и в положительную и в отрецательную степень.
+//Функция возведения в степень (в положительную и в отрецательную).
 decimal Exponentiation(int num, int exp)
 {
     decimal sum = num;
@@ -29,10 +29,10 @@ decimal Exponentiation(int num, int exp)
 // Получение данных от пользователя
 Console.Write("Введите основание степени:");
 int number = Convert.ToInt32(Console.ReadLine());
+//Проверка на отрицательное.
 if (number <= 0)
 {
-    Console.WriteLine("Вы ввели не натуральное число. Попробуйте ещё.");
-    return;
+    number = Math.Abs(number);
 }
 Console.Write("Введите показатель степени:");
 int exponent = Convert.ToInt32(Console.ReadLine());
