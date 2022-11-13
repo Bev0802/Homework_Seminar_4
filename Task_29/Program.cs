@@ -26,7 +26,8 @@ Console.WriteLine("]");
 }
 
 //Программа
-
-int []array = new int [8];
+Console.Write ("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int []array = new int [size];
 FillArray(array);
 PritArray(array);
